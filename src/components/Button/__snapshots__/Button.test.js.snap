@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot renders a disabled button 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#78DCBB",
+      "fontColor": "#FFF",
+      "opacity": 1,
+      "paddingBottom": 20,
+      "paddingLeft": 45,
+      "paddingRight": 45,
+      "paddingTop": 20,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFF",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Button snapshot renders a regular button 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#1EC58E",
+      "fontColor": "#FFF",
+      "opacity": 1,
+      "paddingBottom": 20,
+      "paddingLeft": 45,
+      "paddingRight": 45,
+      "paddingTop": 20,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFF",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Button snapshot renders active button with styles correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#1EC58E",
+      "fontColor": "#FFF",
+      "opacity": 1,
+      "paddingBottom": 20,
+      "paddingLeft": 45,
+      "paddingRight": 45,
+      "paddingTop": 20,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFF",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    Text
+  </Text>
+</View>
+`;

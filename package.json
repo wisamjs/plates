@@ -1,22 +1,72 @@
 {
-  "name": "plates",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
-  },
-  "dependencies": {
-    "react": "16.6.3",
-    "react-native": "0.57.8"
-  },
-  "devDependencies": {
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.48.5",
-    "react-test-renderer": "16.6.3"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
+    "name": "blueprint",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node node_modules/react-native/local-cli/cli.js start",
+        "test": "npm run lint && jest --coverage",
+        "test:watch": "jest --watch --verbose false",
+        "lint": "eslint -c .eslintrc — ext .js  . --ignore-path .gitignore ",
+        "lint:fix": "./node_modules/.bin/eslint -c .eslintrc — ext .js . --ignore-path .gitignore --fix",
+        "test-report": "open test-reports/lcov-report/index.html"
+    },
+    "dependencies": {
+        "@redux-beacon/react-native-google-analytics": "^1.0.0",
+        "moment": "2.20.1",
+        "ramda": "0.25.0",
+        "react": "16.6.1",
+        "react-native": "0.57.5",
+        "react-native-config": "^0.11.5",
+        "react-native-elements": "0.18.5",
+        "react-native-fbsdk": "facebook/react-native-fbsdk",
+        "react-native-google-analytics-bridge": "5.8.0",
+        "react-native-image-picker": "^0.26.10",
+        "react-native-intercom": "^12.0.0",
+        "react-native-keep-awake": "3.0.1",
+        "react-native-svg": "6.0.1-rc.1",
+        "react-native-vector-icons": "4.5.0",
+        "react-redux": "^5.0.6",
+        "recompose": "^0.30.0",
+        "redux": "3.7.2",
+        "redux-beacon": "^2.0.3",
+        "redux-form": "7.3.0",
+        "redux-logger": "3.0.6",
+        "redux-saga": "^0.16.0",
+        "reselect": "3.0.1"
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^3.2.18",
+        "@storybook/addon-links": "3.2.18",
+        "@storybook/react-native": "3.2.18",
+        "babel-eslint": "8.0.3",
+        "babel-jest": "23.6.0",
+        "babel-preset-react-native": "4.0.0",
+        "chai": "4.1.2",
+        "enzyme": "3.3.0",
+        "enzyme-adapter-react-16": "1.1.1",
+        "esdoc": "1.0.4",
+        "esdoc-ecmascript-proposal-plugin": "1.0.0",
+        "esdoc-standard-plugin": "1.0.0",
+        "eslint": "4.13.1",
+        "eslint-plugin-react": "7.5.1",
+        "expect": "22.0.3",
+        "jest": "23.6.0",
+        "jest-fetch-mock": "^2.0.1",
+        "luxon": "^1.8.2",
+        "metro-react-native-babel-preset": "^0.50.0",
+        "mocha": "5.1.1",
+        "prop-types": "15.6.0",
+        "react-addons-test-utils": "15.6.2",
+        "react-dom": "16.0.0",
+        "react-native-mock": "0.3.1",
+        "react-native-navigation": "2.1.3",
+        "react-native-snap-carousel": "3.7.0",
+        "react-test-renderer": "16.6.0-alpha.8af6728"
+    },
+    "jest": {
+        "preset": "react-native",
+        "transform": {
+            "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+        }
+    }
 }
