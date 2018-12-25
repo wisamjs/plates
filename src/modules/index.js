@@ -1,10 +1,12 @@
-import { combineReducers } from "redux";
-import { all, fork } from "redux-saga/effects";
+import { combineReducers } from 'redux';
+import { all, fork } from 'redux-saga/effects';
 
-import * as Users from "../../src/modules/Users/";
-
-export const rootSaga = function* rootSaga() {};
+import * as Weight from '../../src/modules/Weight/';
+import * as Navigation from '../../src/modules/Navigation/';
+export const rootSaga = function* rootSaga() {
+  yield all([fork(Navigation.saga)]);
+};
 
 export const reducers = combineReducers({
-  users: Users.reducer
+  weight: Weight.reducer,
 });

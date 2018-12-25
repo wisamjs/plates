@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+
+  "bracketSpacing": true,
+
+  "jsxBracketSameLine": false,
+
+  "parser": "babylon",
+
+  "semi": true,
+
+  "requirePragma": false,
+
+  "proseWrap": "preserve",
+
+  "arrowParens": "avoid"
+}

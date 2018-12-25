@@ -1,0 +1,65 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "react/display-name": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger-with-children": "error",
+    "react/no-deprecated": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-is-mounted": "error",
+    "react/no-render-return-value": "error",
+    "react/no-string-refs": "error",
+    "react/no-unknown-property": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/require-render-return": "error",
+    "linebreak-style": [
+        2,
+        "unix"
+    ],
+    "semi": [
+        2,
+        "always"
+    ]
+  },
+  "globals": {
+    "describe": 1,
+    "Platform": 1,
+    "xdescribe": 1,
+    "it": 1,
+    "xit": 1,
+    "beforeAll": 1,
+    "afterAll": 1,
+    "beforeEach": 1,
+    "device": 1,
+    "expect": 1,
+    "module": 1,
+    "require": 1,
+    "jest": 1,
+    "element": 1,
+    "by": 1,
+    "__DEV__": 1,
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "extends": ["eslint:recommended"]
+}
