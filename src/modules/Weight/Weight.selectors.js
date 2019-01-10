@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 import R from 'ramda';
-const BAR = 45;
+const BAR_KG = 20;
 const KG_Conversion = 2.205;
 
 const getWeightProp = R.prop('weight');
@@ -29,7 +29,7 @@ function toPlates(totalWeight, plateList) {
   return R.mergeAll(platesToUse);
 }
 
-const subtractBar = weightLb => weightLb - BAR;
+const subtractBar = weightLb => weightLb - BAR_KG;
 const toKg = weightLb => Math.round(weightLb / KG_Conversion);
 
 export const getSelectedLbs = createSelector(getWeightProp, getSelectedLbsProp);
@@ -44,8 +44,7 @@ export const getDisplayKg = createSelector(
   weight => `${weight} Kg`,
 );
 
-export const getPlateWeightsLb = createSelector(getSelectedLbs, subtractBar);
-export const getPlateWeightsKg = createSelector(getPlateWeightsLb, toKg);
+export const getPlateWeightsKg = createSelector(getSelectedKg, subtractBar);
 
 export const getPlates = createSelector(getWeightProp, getPlatesProp);
 export const getPlatesLb = createSelector(getPlates, getLb);
